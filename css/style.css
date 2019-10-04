@@ -65,6 +65,7 @@
         margin: 15px auto;
         /* font-size: 20px; */
         /* text-align: center; */
+        
     }
     
     
@@ -110,7 +111,7 @@
         margin-top: 20px;
         z-index: 3;
         text-decoration: none;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
         color: #fff;
         cursor: pointer;
     }
@@ -119,6 +120,13 @@
         background-color: #007bff;
         color: #fff;
     }
+
+    #js-menu{
+        /* transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out; */
+    }
  
 
 
@@ -126,7 +134,7 @@
 
     .container{
         margin: auto;
-        padding: 0 100px 0 100px;
+        padding: 0 250px 0 250px;
     }
 
     .wrapper{
@@ -162,6 +170,7 @@
     } 
     .logo{
         margin-top: 5px;
+        margin-right: 90px;
     }
 
     .navbar-toggle{
@@ -178,8 +187,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: 40px;
+        padding: 50px 20px;
     }
+    
 
     .pre-footer{
         display: flex;
@@ -211,6 +221,7 @@
         padding-bottom: 40px;
        
     }
+
    
 }
 
@@ -223,7 +234,7 @@
     top: 0;
     left: 0;
     background: #333;
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: 1;
 }
 
@@ -258,17 +269,49 @@
     color:#fff;
 }
 
-.fab {
-    color: #fff;
-    padding-top: 15px;
-    padding-right: 20px;
+.header-content [class*='fab fa-']{
+    color:#fff;
+    /* opacity: 0.1; */
+    /* background-color: #fff; */
+    border: 1px solid #fff; 
+    line-height: 40px;
+    height: 40px;
+    /* padding-top: 15px;
+    padding-right: 20px; */
     z-index: 5;
-    /* padding-top: 10px; */
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 13px 3px;
+    font-size: 30px;
 }
 
-.fab:hover{
-    color:#008ed6;
+.header-content [class*='fab fa-facebook']:hover{
+    /* color:#008ed6; */
+    background-color: #3b5998;
 }
+
+.header-content [class*='fab fa-instagram']:hover{
+    background: linear-gradient(to bottom right, #4c68d7, #8a3ab9, #cd486b, #fbad50);
+}
+
+.header-content [class*='fab fa-twitter']:hover{
+    background-color: #4099ff;
+
+}
+
+.header-content [class*='fab fa-linkedin']:hover{
+    background-color: #0077b5;
+
+}
+
+.header-content [class*='fab fa-github']:hover{
+    background-color: #4078c0;
+
+}
+
+
 
 
 /* Features Section */
@@ -281,9 +324,21 @@
     text-align: center;
 }
 
-.features .fas{
-    font-size: 60px;
-    color: #008ed6;
+
+.features [class*='fas fa-']{
+    color: #fff;
+    background-color: #008ed6;
+    border: 2px solid ;
+    line-height: 40px;
+    height: 100px;
+    z-index: 5;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: auto 3px;
+    font-size: 40px;
+    padding-top: 28px;
 }
 
 /* .core-features{
@@ -375,19 +430,6 @@ footer{
 }
 
 
-/* .img-bio2{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    padding: 10px;
-} */
-
-
-/* .stack-bio{
-    display: flex;
-    margin-bottom: 50px ;
-    justify-content: space-between;
-} */
-
 .box-2{
     flex-basis: 32%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -406,14 +448,53 @@ footer{
     background-color: #fff;
 }
 
+
+
+.more-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transition: all 0.3s linear;
+    transform: translateX(110%);
+    border: 1px solid #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    color: #fff;
+    padding: 0 5px;
+    background: #008ed6;
+    z-index: 2;
+}
+
+
+
 .card-img{
     width: 100%;
     border-radius: 5px 5px 0px 0px;
 }
 
-.cards:hover{
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.img-overlay{
+    position: relative;
+    overflow: hidden;
 }
+
+.img-overlay:hover{
+    background-color: #fff;
+    opacity: 0.7;
+    /* z-index: 1; */
+}
+
+.img-overlay:hover .more-btn {
+    transform: translatex(0);
+}
+
+
+
+
+
+/* .cards:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+} */
 
 .contain{
     padding: 2px 16px;
@@ -483,13 +564,9 @@ hr{
 /* Contact Me Section */
 
 
-
-
-
-
 .contact-card{
-    width: 60vw;
-    height: 60vh;
+    /* width: 60vw;
+    height: 60vh; */
     display: flex;
     justify-content: center;
     align-items: center;
