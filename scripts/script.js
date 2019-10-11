@@ -8,7 +8,7 @@ navBarToggle.addEventListener('click', () => {
 
 
 new Glider(document.querySelector('.glider'), {
-    slidesToShow: 4,
+    slidesToShow: 3,
     draggable: true,
     dots: '#dots',
     arrows: {

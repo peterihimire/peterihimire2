@@ -222,6 +222,12 @@
 
 /* Features Section */
 
+#feature_section{
+    background: #008ed6;
+    color: #fff;
+}
+
+
 .features{
     display: flex;
     flex-direction: column;
@@ -350,6 +356,10 @@ footer{
 
 
 /* Portfolio Section */
+
+#portfolio_section{
+    background: #fff;
+}
 
 .cards{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -551,12 +561,48 @@ textarea{
     /* height: 20vh; */
     /* background: #008ed6; */
 }
+.glider_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin: auto;
+    padding: 50px 0 ;
+}
+
+
+.glider-contain{
+    width: 85% !important;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+/* .glider-next{
+    right: -50px;
+}
+
+.glider-next{
+    right: -50px;
+} */
+
+.fa {
+    display: inline-block;
+    /* font: normal normal normal 14px/1 FontAwesome; */
+    font-size: inherit;
+    text-rendering: auto;
+    color: #008ed6;
+}
 
 figure{
     background: #fff;
     display: block;
     margin: 1.5em;
     padding: .7em;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
 }
 
 
