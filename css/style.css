@@ -336,6 +336,10 @@ footer{
 }
 
 
+.img-bio2 p{
+    margin-bottom: 20px;
+}
+
 .box-2{
     flex-basis: 32%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -539,6 +543,44 @@ textarea{
     justify-content: space-around;
     padding: 20px 20px; 
 }
+
+
+/* Glider Section */
+.testimonial{
+    /* background-image: url(/images/bice4.jpg); */
+    /* height: 20vh; */
+    /* background: #008ed6; */
+}
+
+figure{
+    background: #fff;
+    display: block;
+    margin: 1.5em;
+    padding: .7em;
+}
+
+
+blockquote {
+    padding: .5em;
+    font-size: 1.3em;
+    font-style: italic;
+    text-align: center;
+}
+
+
+figcaption{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: .9em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+
+
 
 
 .pre-footer{
