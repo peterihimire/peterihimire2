@@ -22,7 +22,14 @@
     .text-secondary{
         color: #868e96;
         font-size: 50px;
-        /* color: #008ed6; */
+        margin: 0 40px 0 10px;
+        /* text-transform: uppercase; */
+    }
+
+    .text-primary{
+        font-size: 50px;
+        margin: 0 0 0 40px;
+        /* text-transform: uppercase; */
     }
 
     .navbar{
@@ -312,10 +319,25 @@ footer{
 /* About Section */
 .lg-heading{
     font-size: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.lg-heading::before,
+.lg-heading::after{
+    content:'';
+    flex: 1 1;
+    border-bottom: 10px solid  #868e96;
+    margin: auto;
+}
+
+.sub-header h1{
+
 }
 
 .sm-heading{
     font-size: 30px;
+    text-align: center;
 }
 
 .sub-header{
