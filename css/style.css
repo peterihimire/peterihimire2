@@ -23,7 +23,12 @@
     .text-secondary{
         color: #868e96;
         font-size: 50px;
-        margin: 0 10px;
+        margin: 0 40px 0 10px;
+    }
+
+    .text-primary{
+        font-size: 50px;
+        margin: 0 0 0 40px;
     }
 
     .navbar{
@@ -218,6 +223,11 @@
 
 /* Features Section */
 
+#feature_section{
+    background:  #008ed6;
+    color: #fff;
+}
+
 .features{
     display: flex;
     flex-direction: column;
@@ -287,8 +297,10 @@ footer{
     font-size: 50px;
     display: flex;
     flex-direction: row;
+    text-align: center;
 }
 
+.lg-heading::before,
 .lg-heading::after{
     content:'';
     flex: 1 1;
@@ -299,6 +311,7 @@ footer{
 
 .sm-heading{
     font-size: 30px;
+    text-align: center;
 }
 
 .sub-header{
@@ -331,6 +344,10 @@ footer{
 
 
 /* Portfolio Section */
+
+#portfolio_section{
+    background: #fff;
+}
 
 .cards{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -521,6 +538,8 @@ textarea{
 
 
 
+
+
 .core-features{
     display: flex;
     flex-direction: column;
@@ -576,6 +595,78 @@ textarea{
     padding-bottom: 40px;
    
 }
+
+
+
+/* Glider Section */
+.testimonial{
+    /* color: #333; */
+    /* height: 20vh; */
+    /* background: #008ed6; */
+}
+
+.glider_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin: auto;
+    padding: 50px 0 ;
+}
+
+
+.glider-contain{
+    width: 85% !important;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+/* .glider-next{
+    right: -50px;
+}
+
+.glider-next{
+    right: -50px;
+} */
+
+.fa {
+    display: inline-block;
+    /* font: normal normal normal 14px/1 FontAwesome; */
+    font-size: inherit;
+    text-rendering: auto;
+    color: #008ed6;
+}
+
+figure{
+    background: #fff;
+    display: block;
+    margin: 1.5em;
+    padding: .7em;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+
+blockquote {
+    padding: .5em;
+    font-size: 1.3em;
+    font-style: italic;
+    text-align: center;
+}
+
+
+figcaption{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: .9em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
 
 
 
