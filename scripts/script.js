@@ -1,18 +1,22 @@
-let mainNav = document.querySelector('.main-nav');
-let navBarToggle = document.querySelector('.navbar-toggle')
+const navbarBtn = document.querySelector('.navbar_btn');
+const navbarLinks = document.querySelector('.navbar_links');
 
-navBarToggle.addEventListener('click', () => {
-    mainNav.classList.toggle('active');
-});
+// For menu button
+navbarBtn.addEventListener('click' , () => {
+    let value = navbarLinks.classList.contains('navbar_collapse');
 
-navBarToggle.addEventListener('click', () => {
-    mainNav.classList.toggle('change');
-});
+    if(value){
+        navbarLinks.classList.remove('navbar_collapse');
+        navbarBtn.classList.remove('change');
+    }else{
+        navbarLinks.classList.add('navbar_collapse');
+        navbarBtn.classList.add('change');
+    }
+})
 
-
-
+// For Glider JS 
 new Glider(document.querySelector('.glider'), {
-    slidesToShow: 3,
+    slidesToShow: 4,
     draggable: true,
     dots: '#dots',
     arrows: {
@@ -20,3 +24,6 @@ new Glider(document.querySelector('.glider'), {
         next: '.glider-next'
     }
 });
+
+// For AOS
+AOS.init();
